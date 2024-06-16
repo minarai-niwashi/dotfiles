@@ -15,6 +15,3 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 if [ -f ~/dotfiles/.zshrc ]; then
     cp ~/dotfiles/.zshrc ~/.zshrc
 fi
-
-# Set zsh as the default shell
-chsh -s $(which zsh)
