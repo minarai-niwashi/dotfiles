@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Install zsh
-sudo -E apt update
-sudo -E apt install -y zsh
+sudo -E apt-get update
+sudo -E apt-get install -y zsh
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://install.ohmyz.sh/)"
