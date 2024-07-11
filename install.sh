@@ -13,5 +13,5 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 # Copy custom zshrc if exists
 if [ -f ~/dotfiles/.zshrc ]; then
-    cp ~/dotfiles/.zshrc ~/.zshrc
+    cat ~/dotfiles/.zshrc >> ~/.zshrc
 fi
