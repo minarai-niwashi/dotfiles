@@ -2,7 +2,7 @@
 
 # Install zsh
 sudo -E apt-get update
-sudo -E apt-get install -y zsh
+sudo -E apt-get install -y zsh fzf
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://install.ohmyz.sh/)"
