@@ -1,11 +1,18 @@
 #!/bin/bash
 
-# Install zsh
-sudo apt-get update
-sudo apt-get install -y zsh fzf
-
-# Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+if env | grep -e "HTTP_PROXY" -e "HTTPS_PROXY"; then
+    # Install zsh
+    sudo -E apt-get update
+    sudo -E apt-get install -y zsh fzf
+    # Install oh-my-zsh
+    sh -c "$(curl -fsSL https://install.ohmyz.sh/)"
+else
+    # Install zsh
+    sudo apt-get update
+    sudo apt-get install -y zsh fzf
+    # Install oh-my-zsh
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
