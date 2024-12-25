@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if env | grep -e "HTTP_PROXY" -e "HTTPS_PROXY"; then
+if env | grep -e "http_proxy" -e "https_proxy"; then
     # Install zsh
     sudo -E apt-get update
     sudo -E apt-get install -y zsh fzf
