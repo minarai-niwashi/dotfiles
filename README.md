@@ -10,4 +10,5 @@ The plugins included are:
 
 ## Tested Environment
 
-- OS: Ubuntu 22.04
+- **OS:** Ubuntu 22.04
+- **OS:** Debian 11 (bullseye)
